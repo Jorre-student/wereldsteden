@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorre's App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slide-ISS">
+      <h2>ISS Urinetank</h2>
+      <p>Realtime vulniveau van de urinetank aan boord van het International Space Station.</p>
+      <span>💡 Feitje: Het ISS recyclet urine om water te besparen voor de bemanning!</span>
+      <div id="urineTankLevel">Aan het laden...</div>
+    </div>
+    <!-- Slide 1: Parijs (Europa) -->
+    <div class="swiper-slide slide-paris">
+      <h2>Parijs, Frankrijk</h2>
+      <p>De stad van de liefde en de iconische Eiffeltoren.</p>
+      <span>💡 Feitje: Wist je dat er een mini-Eiffeltoren in Tokio staat?</span>
+      <div class="weather" data-city="Paris">Aan het laden...</div>
+    </div>
+
+    <!-- Slide 2: New York (Noord-Amerika) -->
+    <div class="swiper-slide slide-nyc">
+      <h2>New York, VS</h2>
+      <p>The Big Apple met zijn levendige Times Square.</p>
+      <span>💡 Feitje: NYC heeft meer dan 800 talen die worden gesproken!</span>
+      <div class="weather" data-city="New York">Aan het laden...</div>
+    </div>
+
+    <!-- Slide 3: Tokio (Azië) -->
+    <div class="swiper-slide slide-tokyo">
+      <h2>Tokio, Japan</h2>
+      <p>Een futuristische metropool vol neonlichten en tempels.</p>
+      <span>💡 Feitje: Tokio heeft 's werelds drukste treinstation!</span>
+      <div class="weather" data-city="Tokyo">Aan het laden...</div>
+    </div>
+
+    <!-- Slide 4: Kaapstad (Afrika) -->
+    <div class="swiper-slide slide-cape">
+      <h2>Kaapstad, Zuid-Afrika</h2>
+      <p>Een stad met adembenemende natuur en de Tafelberg.</p>
+      <span>💡 Feitje: Hier vind je de meest diverse bloemen ter wereld!</span>
+      <div class="weather" data-city="Cape Town">Aan het laden...</div>
+    </div>
+
+    <!-- Slide 5: Sydney (Oceanië) -->
+    <div class="swiper-slide slide-sydney">
+      <h2>Sydney, Australië</h2>
+      <p>Bekend om het Opera House en prachtige stranden.</p>
+      <span>💡 Feitje: Sydney’s haven is de grootste natuurlijke haven ter wereld!</span>
+      <div class="weather" data-city="Sydney">Aan het laden...</div>
+    </div>
+  </div>
+
+  <!-- Navigatieknoppen -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <!-- Paginatie -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  --swiper-navigation-color: rgb(255, 255, 255);
+  --swiper-pagination-color: rgb(255, 255, 255);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.swiper {
+  width: 80vw;
+  height: 80vh;
+}
+
+.swiper-wrapper
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: red;
+}
+
+/* Semi-transparante achtergrondlaag */
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+h2, p, span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Achtergrondafbeeldingen per stad */
+.slide-paris { background-image: url(../images/parijs-eiffeltoren.jpeg); }
+.slide-nyc { background-image: url(../images/nyc.jpg); }
+.slide-tokyo { background-image: url(../images/tokio.jpg); }
+.slide-cape { background-image: url(../images/kaapstad.jpg); }
+.slide-sydney { background-image: url(../images/sydney.png); }
+.slide-ISS {background-image: url(../images/iss.webp);}
+.weather {
+  display: flex;
+  padding: 4px 10px 4px 10px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 16px;
+  background-color: #fff;
+  color: black;
+}
+
+/* Stijlen voor de ISS-slide */
+.slide-iss {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#urineTankLevel {
+  font-size: 1.5em;
+  color: black;
+  margin-top: 10px;
+  display: flex;
+  border-radius: 32px;
+  padding-left: 24px;
+  width: 80%;
+  height: 48px;
+  background: rgb(233,211,2);
+background: linear-gradient(90deg, rgba(233,211,2,1) 0%, rgba(221,249,255,1) 0%);
+}
