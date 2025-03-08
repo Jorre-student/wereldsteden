@@ -86,7 +86,7 @@ h2, p, span {
 
 /* Stijlen voor de ISS-slide */
 .slide-iss {
-  color: white;
+  color: rgb(240, 240, 240);
   text-align: center;
   padding: 20px;
 }
