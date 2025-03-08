@@ -34,7 +34,7 @@ async function fetchWeather(city, element) {
     const data = await response.json();
 
     if (data.main && data.main.temp) {
-      element.textContent = `${data.main.temp}°C 🌡️`; // Toon temperatuur
+      element.textContent = `${Math.round(data.main.temp)}°C 🌡️`; // Toon temperatuur
     } else {
       element.textContent = "Geen data ❌"; // Fallback bij API-fout
     }
