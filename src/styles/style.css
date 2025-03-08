@@ -25,6 +25,25 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
 
 .swiper {
   width: 80vw;
@@ -35,7 +54,7 @@ body {
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: white;
   text-align: center;
@@ -73,9 +92,18 @@ h2, p, span {
 .slide-cape { background-image: url(../images/kaapstad.jpg); }
 .slide-sydney { background-image: url(../images/sydney.png); }
 .slide-ISS {background-image: url(../images/iss.webp);}
+
+.slide-titel {
+  gap: 4px;
+}
+.slide-info {
+  justify-items: center;
+}
 .weather {
   display: flex;
+  width: fit-content;
   padding: 4px 10px 4px 10px;
+  margin-top: 4px;
   text-align: center;
   align-items: center;
   align-content: center;
