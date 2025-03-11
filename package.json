@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "prettier": "prettier --write .",
     "prepare": "husky"
   },
@@ -13,10 +16,13 @@
     "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.5.3",
     "vite": "^6.1.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.21",
     "lightstreamer-client-web": "^9.2.2",
     "swiper": "^11.2.2"
   },
