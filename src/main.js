@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { apiKey } from './secret'
 import './styles/style.css'
 import Swiper from 'swiper'
