@@ -4,15 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "prettier": "prettier --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.3",
     "vite": "^6.1.0"
   },
   "dependencies": {
     "lightstreamer-client-web": "^9.2.2",
     "swiper": "^11.2.2"
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
   }
 }
