@@ -1,1 +1,2 @@
 #!/bin/sh\n. "$(dirname "$0")/_/husky.sh"\n\nnpx lint-staged
+npx lint-staged
