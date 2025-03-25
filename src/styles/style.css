@@ -5,8 +5,8 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #fff;
-  --swiper-navigation-color: rgb(255, 255, 255);
-  --swiper-pagination-color: rgb(255, 255, 255);
+  --swiper-navigation-color: #ffb703;
+  --swiper-pagination-color: #ffb703;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -112,8 +112,8 @@ span {
   text-align: center;
   align-items: center;
   border-radius: 16px;
-  background-color: #fff;
-  color: black;
+  background-color: #023047;
+  color: white;
 }
 
 #urineTankLevel {
