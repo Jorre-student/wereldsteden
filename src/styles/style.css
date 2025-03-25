@@ -2,14 +2,11 @@
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #fff;
-
   --swiper-navigation-color: rgb(255, 255, 255);
   --swiper-pagination-color: rgb(255, 255, 255);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,27 +15,22 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* Allow sections to stack vertically for scrolling */
+  display: block;
   min-width: 320px;
   min-height: 100vh;
 }
+
 p {
   display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 0;
   unicode-bidi: isolate;
 }
 
 h2 {
   display: block;
   font-size: 1.5em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 0;
   font-weight: bold;
   unicode-bidi: isolate;
 }
@@ -66,7 +58,6 @@ h2 {
   color: red;
 }
 
-/* Semi-transparante achtergrondlaag */
 .swiper-slide::before {
   content: '';
   position: absolute;
@@ -85,7 +76,7 @@ span {
   z-index: 2;
 }
 
-/* Achtergrondafbeeldingen per stad */
+/* Background images per city */
 .slide-paris {
   background-image: url(../images/parijs-eiffeltoren.jpeg);
 }
@@ -108,27 +99,21 @@ span {
 .slide-titel {
   gap: 4px;
 }
+
 .slide-info {
   justify-items: center;
 }
+
 .weather {
   display: flex;
   width: fit-content;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   margin-top: 4px;
   text-align: center;
   align-items: center;
-  align-content: center;
   border-radius: 16px;
   background-color: #fff;
   color: black;
-}
-
-/* Stijlen voor de ISS-slide */
-.slide-iss {
-  color: rgb(240, 240, 240);
-  text-align: center;
-  padding: 20px;
 }
 
 #urineTankLevel {
@@ -140,7 +125,6 @@ span {
   padding-left: 24px;
   width: 80%;
   height: 48px;
-  background: rgb(233, 211, 2);
   background: linear-gradient(
     90deg,
     rgba(233, 211, 2, 1) 0%,
