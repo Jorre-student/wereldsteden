@@ -227,7 +227,7 @@ cities.forEach((city) => {
 
   // Pin (kleine rode bol)
   const pinGeometry = new THREE.SphereGeometry(0.05, 8, 8)
-  const pinMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+  const pinMaterial = new THREE.MeshBasicMaterial({ color: 0xffb703 })
   const pinMesh = new THREE.Mesh(pinGeometry, pinMaterial)
   pinMesh.position.copy(pos)
   earthMesh.add(pinMesh)
